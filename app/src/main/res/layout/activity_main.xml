@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="2dp"
+                android:textSize="18sp"
+                android:textColor="#00695c"
+                android:text="Question 1 \n \nWhat is the resultant profit or loss percentage if  the price of an object is increased by 20% and then decreased by 10%?" />
+
+            <EditText
+                android:id="@+id/answer_for_question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type just the number"
+                android:inputType="phone"
+                android:maxLength="2"
+                android:textSize="18sp"
+                android:textColor="#00695c"/>
+
+            <TextView
+                android:id="@+id/Question1_Explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#b71c1c"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#00695c"
+                android:text="Question 2 \n \n Whic of the following is true?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Radio_Button_Correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2x2 = 4"
+                    android:textSize="18sp"
+                    android:textColor="#00bfa5"/>
+
+                <RadioButton
+                    android:id="@+id/Radio_Button_Incorrect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2x4 = 4"
+                    android:textSize="18sp"
+                    android:textColor="#00bfa5"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Question2_Explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#b71c1c"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#00695c"
+                android:text="Question 3 \n \n Which of the following are Asian Countries?" />
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/India"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:textSize="18sp"
+                        android:textColor="#00695c"
+                        android:text="India" />
+
+                    <CheckBox
+                        android:id="@+id/USA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:textSize="18sp"
+                        android:textColor="#00695c"
+                        android:text="United States of Americs" />
+
+                    <CheckBox
+                        android:id="@+id/China"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:textSize="18sp"
+                        android:textColor="#00695c"
+                        android:text="China" />
+                </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/Question3_Explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#b71c1c"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#00695c"
+                android:text="Question 4 \n \n Who is the present President of India" />
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/Modi_Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="imageButtonOnClick"
+                    android:src="@drawable/modi" />
+
+                <ImageButton
+                    android:id="@+id/Kovind_Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="imageButtonOnClick"
+                    android:src="@drawable/kovind" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Question4_Explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#b71c1c"/>
+
+            <Button
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="submitAnswer"
+                android:text="submit"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#e0f2f1"/>
+
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:id="@+id/scoreView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="24sp"
+                android:textColor="#d50000"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
